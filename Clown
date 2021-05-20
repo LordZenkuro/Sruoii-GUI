@@ -1,0 +1,788 @@
+if not game:IsLoaded() then 
+game.Loaded:Wait() 
+end 
+wait(2.5)
+ game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Custom For Sruoii";
+Text = "Because He A Nigger";
+ })
+ wait(1.5)
+  game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Press P To Open";
+Text = "Fucking Clown";
+ })
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local fastrun = Instance.new("TextButton")
+local noslow = Instance.new("TextButton")
+local nofog = Instance.new("TextButton")
+local autoblock = Instance.new("TextButton")
+local nolevel = Instance.new("TextButton")
+local nowings = Instance.new("TextButton")
+local toprespawn = Instance.new("TextButton")
+local infiniteyield = Instance.new("TextButton")
+local statchecker = Instance.new("TextButton")
+local zenniwish = Instance.new("TextButton")
+local beerusanim = Instance.new("TextButton")
+local antiglitch = Instance.new("TextButton")
+local earthgodmode = Instance.new("TextButton")
+local noaura = Instance.new("TextButton")
+local infinitexp = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local earthtp = Instance.new("TextButton")
+local namektp = Instance.new("TextButton")
+local spacetp = Instance.new("TextButton")
+local futuretp = Instance.new("TextButton")
+local helltp = Instance.new("TextButton")
+local heaventp = Instance.new("TextButton")
+local queuetp = Instance.new("TextButton")
+local zarotp = Instance.new("TextButton")
+local lookouttp = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Frame.Position = UDim2.new(0.20458132, 0, 0.214046806, 0)
+Frame.Size = UDim2.new(0.5908373, 0, 0.571906328, 0)
+Frame.Visible = false
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+TextLabel.Size = UDim2.new(0, 909, 0, 39)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Clown | GUI"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+fastrun.Name = "fastrun"
+fastrun.Parent = Frame
+fastrun.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+fastrun.Position = UDim2.new(0.0200534761, 0, 0.149122819, 0)
+fastrun.Size = UDim2.new(0, 143, 0, 36)
+fastrun.Font = Enum.Font.SciFi
+fastrun.Text = "FastRun"
+fastrun.TextColor3 = Color3.fromRGB(0, 0, 0)
+fastrun.TextSize = 14.000
+fastrun.MouseButton1Down:connect(function()
+	if not game:IsLoaded() then 
+		game.Loaded:Wait() 
+	end 
+	wait()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Fast Run/Fly";
+		Text = "Activated";
+	})
+	while wait() do
+		function setSpeed(walkspeedSet)
+
+			local plr = game:GetService"Players".LocalPlayer
+			local serverTraits = plr.Backpack:WaitForChild'ServerTraits'
+
+			for i,v in next, getconnections(serverTraits.Input.OnClientEvent) do
+				local speed = (350*(walkspeedSet/44))-350
+				v:Fire({speed})
+				break
+			end
+		end
+		setSpeed(1750)
+		wait()
+		plr = game.Players.LocalPlayer
+		hum = plr.Character.HumanoidRootPart
+		mouse = plr:GetMouse()
+
+		mouse.KeyDown:connect(function(key)
+			if key == "u" then
+				if mouse.Target then
+					game.Players.LocalPlayer.Backpack.ServerTraits.Vanish:FireServer()
+					wait(.25)
+					hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+					wait(.25)
+				end
+			end
+		end)
+	end
+end)
+
+noslow.Name = "noslow"
+noslow.Parent = Frame
+noslow.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+noslow.Position = UDim2.new(0.21122995, 0, 0.149122819, 0)
+noslow.Size = UDim2.new(0, 143, 0, 36)
+noslow.Font = Enum.Font.SciFi
+noslow.Text = "NoSlow"
+noslow.TextColor3 = Color3.fromRGB(0, 0, 0)
+noslow.TextSize = 14.000
+noslow.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "No Slow";
+		Text = "Activated";
+	})
+	if not game:IsLoaded() then 
+		game.Loaded:Wait() 
+	end 
+	wait()
+
+	while wait() do
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == "Justice Combination" then
+				local action = game.Players.LocalPlayer.Character:WaitForChild("Action")
+				if action then wait() action:Destroy() end end
+			if v.Name == "Action" then
+				v:Destroy()
+			end
+			if v.Name == "Attacking" then
+				v:Destroy()
+			end
+			if v.Name == "Using" then
+				v:Destroy()
+			end
+			if v.Name == "hyper" then
+				v:Destroy()
+			end
+			if v.Name == "Hyper" then
+				v:Destroy()
+			end
+			if v.Name == "heavy" then
+				v:Destroy()
+			end
+			if v.Name == "KiBlasted" then
+				v:Destroy()
+			end
+			if v.Name == "Tele" then
+				v:Destroy()
+			end
+			if v.Name == "tele" then
+				v:Destroy()
+			end
+			if v.Name == "Killed" then
+				v:Destroy()
+			end
+			if v.Name == "Slow" then
+				v:Destroy()
+			end
+			if v.Name == "Block" and v.Value == true then
+				v.Value = false
+			end
+		end
+	end
+end)
+
+nofog.Name = "nofog"
+nofog.Parent = Frame
+nofog.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+nofog.Position = UDim2.new(0.403743327, 0, 0.149122819, 0)
+nofog.Size = UDim2.new(0, 143, 0, 36)
+nofog.Font = Enum.Font.SciFi
+nofog.Text = "NoFog"
+nofog.TextColor3 = Color3.fromRGB(0, 0, 0)
+nofog.TextSize = 14.000
+nofog.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "No Fog";
+		Text = "Activated";
+	})
+	if not game:IsLoaded() then 
+		game.Loaded:Wait() 
+	end 
+	wait()
+	game:GetService("RunService").RenderStepped:connect(function()
+		game.Lighting.FogEnd = (99999999)
+	end)
+end)
+
+autoblock.Name = "autoblock"
+autoblock.Parent = Frame
+autoblock.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+autoblock.Position = UDim2.new(0.594919801, 0, 0.149122819, 0)
+autoblock.Size = UDim2.new(0, 143, 0, 36)
+autoblock.Font = Enum.Font.SciFi
+autoblock.Text = "AutoBlock"
+autoblock.TextColor3 = Color3.fromRGB(0, 0, 0)
+autoblock.TextSize = 14.000
+autoblock.MouseButton1Down:connect(function()
+	local A_1 = 
+		{
+			[1] = "blockoff"
+		}
+	local A_2 = CFrame.new(-641.294189, 19.4875412, -2931.65332, -0.943309546, -0.221865401, 0.246866077, -0, 0.74376446, 0.668441772, -0.331914335, 0.630547523, -0.701600075)
+	local A_3 = nil -- Path contained invalid instance
+	local Event = game:GetService("Players")["LocalPlayer"].Backpack.ServerTraits.Input
+	Event:FireServer(A_1, A_2, A_3)
+	local lplr = game.Players.LocalPlayer
+	local mouse = lplr:GetMouse()
+	_G.on = false
+	on = true
+	off = false
+
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Auto Block";
+		Text = "Press F To Enable And Disable.";
+	})
+
+	mouse.KeyDown:connect(function(key)
+		if key == "f" then
+			if _G.on == false then
+				_G.on = on
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "Block Enabled";
+					Text = "Press F To Disable.";
+				})
+				while _G.on == true do
+					wait()
+					local A_1 = 
+						{
+							[1] = "blockon"
+						}
+					local A_2 = CFrame.new(-641.294189, 19.4875412, -2931.65332, -0.943309546, -0.221865401, 0.246866077, -0, 0.74376446, 0.668441772, -0.331914335, 0.630547523, -0.701600075)
+					local A_3 = nil -- Path contained invalid instance
+					local Event = game:GetService("Players")["LocalPlayer"].Backpack.ServerTraits.Input
+					Event:FireServer(A_1, A_2, A_3)
+				end
+			elseif _G.on == true then
+				_G.on = off
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "Block Disabled";
+					Text = "Press F To Enable.";
+				})
+			end
+		end
+	end)
+end)
+
+nolevel.Name = "nolevel"
+nolevel.Parent = Frame
+nolevel.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+nolevel.Position = UDim2.new(0.786096275, 0, 0.149122819, 0)
+nolevel.Size = UDim2.new(0, 143, 0, 36)
+nolevel.Font = Enum.Font.SciFi
+nolevel.Text = "NoLevel"
+nolevel.TextColor3 = Color3.fromRGB(0, 0, 0)
+nolevel.TextSize = 14.000
+nolevel.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "No/Hide Level";
+		Text = "Activated";
+	})
+	if not game:IsLoaded() then
+		game.Loaded:Wait()
+	end
+	wait()
+	game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model"):Destroy()
+end)
+
+nowings.Name = "nowings"
+nowings.Parent = Frame
+nowings.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+nowings.Position = UDim2.new(0.0200534761, 0, 0.254385978, 0)
+nowings.Size = UDim2.new(0, 143, 0, 36)
+nowings.Font = Enum.Font.SciFi
+nowings.Text = "NoWings"
+nowings.TextColor3 = Color3.fromRGB(0, 0, 0)
+nowings.TextSize = 14.000
+nowings.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "No Wings";
+		Text = "Activated";
+	})
+	getgenv().enabler = true  --Set to true to enable, false to disable.
+
+	--[Script Starts Here]:--
+
+	if (not game:IsLoaded()) then
+		game.Loaded:Wait();
+	end;
+	local lplr=game:GetService('Players').LocalPlayer;
+	local char=game:GetService('Workspace'):waitForChild('Live'):waitForChild(lplr.Name);
+	function xd(char)
+		lmfao=false;
+		if (getgenv().enabler==false) then
+			ran:Disconnect();
+		else
+			repeat wait();
+				if (char:findFirstChild('RebirthWings')) then
+					x=char.HumanoidRootPart.CFrame.X;
+					y=char.HumanoidRootPart.CFrame.Y;
+					z=char.HumanoidRootPart.CFrame.Z;
+					char.HumanoidRootPart.CFrame=CFrame.new(x,y,z) + Vector3.new(0,-200,0);
+					char.RebirthWings.Handle.AccessoryWeld:Destroy();
+					char.HumanoidRootPart.CFrame=CFrame.new(x,y,z);
+					x,y,z=nil;
+					char.RebirthWings:Destroy();
+					lmfao=true;
+				end;
+				if (char:findFirstChild('RealHalo')) then
+					x=char.HumanoidRootPart.CFrame.X;
+					y=char.HumanoidRootPart.CFrame.Y;
+					z=char.HumanoidRootPart.CFrame.Z;
+					char.HumanoidRootPart.CFrame=CFrame.new(x,y,z) + Vector3.new(0,-200,0);
+					char.RealHalo.Handle.AccessoryWeld:Destroy();
+					char.HumanoidRootPart.CFrame=CFrame.new(x,y,z);
+					x,y,z=nil;
+					char.RealHalo:Destroy();
+					lmfao=true;
+				end;
+			until lmfao==true or getgenv().enabler==false;
+		end;
+	end;
+	repeat wait()
+		for i,v in pairs(char:getChildren()) do
+			if v:IsA('Model') then
+				lmao=true;
+				xd(char);
+				break;
+			end;
+		end;
+	until lmao==true;
+	lmao=false;
+	lplr.CharacterRemoving:connect(function() lmfao=true;end);
+	lplr.CharacterAdded:connect(function(v)
+		char=v;
+		xd(char);
+		print('reconnected');
+	end);
+end)
+
+toprespawn.Name = "toprespawn"
+toprespawn.Parent = Frame
+toprespawn.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+toprespawn.Position = UDim2.new(0.21122995, 0, 0.254385978, 0)
+toprespawn.Size = UDim2.new(0, 143, 0, 36)
+toprespawn.Font = Enum.Font.SciFi
+toprespawn.Text = "TopRespawn"
+toprespawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+toprespawn.TextSize = 14.000
+toprespawn.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Top Respawn";
+		Text = "Activated";
+	})
+	Die = game.Players.LocalPlayer.Character
+	lplr = game:GetService("Players").LocalPlayer
+	game:GetService("RunService").RenderStepped:connect(function()
+		if Die.Humanoid.Health == 1 then
+			game:GetService("Players").LocalPlayer.Character.SuperAction:Destroy()
+			wait(0.8)
+			game:GetService("TweenService"):Create(lplr.Character.HumanoidRootPart, TweenInfo.new(0.5, Enum.EasingStyle.Linear), {CFrame = CFrame.new(100, 100, 100)}):Play()
+		end
+	end)
+end)
+
+infiniteyield.Name = "infiniteyield"
+infiniteyield.Parent = Frame
+infiniteyield.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+infiniteyield.Position = UDim2.new(0.403743327, 0, 0.254385978, 0)
+infiniteyield.Size = UDim2.new(0, 143, 0, 36)
+infiniteyield.Font = Enum.Font.SciFi
+infiniteyield.Text = "InfiniteYield"
+infiniteyield.TextColor3 = Color3.fromRGB(0, 0, 0)
+infiniteyield.TextSize = 14.000
+infiniteyield.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "InfiniteYield";
+		Text = "Activated";
+	})
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+statchecker.Name = "statchecker"
+statchecker.Parent = Frame
+statchecker.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+statchecker.Position = UDim2.new(0.594919801, 0, 0.254385978, 0)
+statchecker.Size = UDim2.new(0, 143, 0, 36)
+statchecker.Font = Enum.Font.SciFi
+statchecker.Text = "StatChecker"
+statchecker.TextColor3 = Color3.fromRGB(0, 0, 0)
+statchecker.TextSize = 14.000
+statchecker.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Stat Checker";
+		Text = "Press F9";
+	})
+	_G.stats = "" --Type the username of the player you want to check stats of in here.
+
+	for i,v in pairs(game.Players:GetChildren()) do
+		if v and v.Name ~= game.Players.LocalPlayer.Name and not game.Players:GetPlayerFromCharacter(v) and string.match(string.lower(v.Name), string.lower(_G.stats)) then
+			local lvl = v.Character.Stats
+			warn(v.Name)
+			for i,f in pairs(v.Character:GetChildren()) do
+				if string.find(tostring(f.Name):lower(), 'lvl.') then
+					warn(f.Name)
+				end
+			end
+			
+			warn("Race:", lvl.Parent["Race"].Value)
+			warn("Health Max:", lvl["Health-Max"].Value)
+			warn("Ki Max:", lvl["Ki-Max"].Value)
+			warn("Melee Damage:", lvl["Phys-Damage"].Value)
+			warn("Ki-Damage:", lvl["Ki-Damage"].Value)
+			warn("Melee Resistance:", lvl["Phys-Resist"].Value)
+			warn("Ki Resistance:", lvl["Ki-Resist"].Value)
+			warn("Speed:", lvl["Speed"].Value)
+			warn("End of Stats.")
+			warn("---------------------------")
+		end
+	end
+
+end)
+
+zenniwish.Name = "zenniwish"
+zenniwish.Parent = Frame
+zenniwish.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+zenniwish.Position = UDim2.new(0.786096275, 0, 0.254385978, 0)
+zenniwish.Size = UDim2.new(0, 143, 0, 36)
+zenniwish.Font = Enum.Font.SciFi
+zenniwish.Text = "ZenniWish"
+zenniwish.TextColor3 = Color3.fromRGB(0, 0, 0)
+zenniwish.TextSize = 14.000
+zenniwish.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Zenni Wish";
+		Text = "YOU HAVE TO FINISH TOP BEFORE USING";
+	})
+	AutoWish = 'Zenni'
+
+	if AutoWish == 'Zenni' or AutoWish == 'zenni' then
+		loadstring(game:HttpGet("https://shuko.000webhostapp.com/Zenni", true))()
+	elseif AutoWish == 'Exp' or AutoWish == 'exp' then
+		loadstring(game:HttpGet("https://shuko.000webhostapp.com/Exp", true))()
+	elseif AutoWish == 'Level Cap' or AutoWish == 'level cap' then
+		loadstring(game:HttpGet("https://shuko.000webhostapp.com/Level%20Cap", true))()
+	end warn('Debugging')
+end)
+
+beerusanim.Name = "beerusanim"
+beerusanim.Parent = Frame
+beerusanim.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+beerusanim.Position = UDim2.new(0.0200534761, 0, 0.359649152, 0)
+beerusanim.Size = UDim2.new(0, 143, 0, 36)
+beerusanim.Font = Enum.Font.SciFi
+beerusanim.Text = "BeerusAnimation"
+beerusanim.TextColor3 = Color3.fromRGB(0, 0, 0)
+beerusanim.TextSize = 14.000
+beerusanim.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Beerus Animation";
+		Text = "Activated";
+	})
+	if not game:IsLoaded() then
+		game.Loaded:Wait()
+	end wait(0.5)
+
+	player = game.Players.LocalPlayer while wait() do
+		if game.Workspace.Live[player.Name].Animate.idle:FindFirstChild("Animation1") then
+			game.Workspace.Live[player.Name].Animate.idle:FindFirstChild("Animation1").AnimationId = "rbxassetid://1171558651"
+			if game.Workspace.Live[player.Name].Animate.walk:FindFirstChild("RunAnim") then
+				game.Workspace.Live[player.Name].Animate.walk:FindFirstChild("RunAnim").AnimationId = "rbxassetid://1171558651"
+			end end end
+end)
+
+antiglitch.Name = "antiglitch"
+antiglitch.Parent = Frame
+antiglitch.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+antiglitch.Position = UDim2.new(0.211229935, 0, 0.359649152, 0)
+antiglitch.Size = UDim2.new(0, 143, 0, 36)
+antiglitch.Font = Enum.Font.SciFi
+antiglitch.Text = "AntiGlitch"
+antiglitch.TextColor3 = Color3.fromRGB(0, 0, 0)
+antiglitch.TextSize = 14.000
+antiglitch.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "AntiGlitch";
+		Text = "Activated";
+	})
+	if not game:IsLoaded() then 
+		game.Loaded:Wait() 
+	end 
+	wait(1)
+	while wait() do
+		local Devil = game.Players.LocalPlayer
+		local Angel = game.Players.LocalPlayer.Character
+		local Guardian = Angel.LowerTorso:WaitForChild("BodyVelocity")
+		if Guardian then Guardian:Destroy()
+		end
+	end
+	while wait() do
+		local x = game.Players.LocalPlayer.Character.LowerTorso:WaitForChild("KnockBacked")
+		if x then x:Destroy()
+		end
+	end
+end)
+
+earthgodmode.Name = "earthgodmode"
+earthgodmode.Parent = Frame
+earthgodmode.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+earthgodmode.Position = UDim2.new(0.403743297, 0, 0.359649152, 0)
+earthgodmode.Size = UDim2.new(0, 143, 0, 36)
+earthgodmode.Font = Enum.Font.SciFi
+earthgodmode.Text = "EarthGodMode"
+earthgodmode.TextColor3 = Color3.fromRGB(0, 0, 0)
+earthgodmode.TextSize = 14.000
+earthgodmode.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Earth Godmode";
+		Text = "Activated";
+	})
+	if not game:IsLoaded() then
+		game.Loaded:Wait() end wait(2)
+	game:GetService("RunService").Stepped:Connect(function()
+		firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game.Workspace.Touchy.Part, 0)
+		firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game.Workspace.Touchy.Part, 1)
+		if game.Players.LocalPlayer.PlayerGui:FindFirstChild("Popup") then
+			game.Players.LocalPlayer.PlayerGui.Popup:Remove()
+		end end) warn'Godmode Running:'
+end)
+
+noaura.Name = "noaura"
+noaura.Parent = Frame
+noaura.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+noaura.Position = UDim2.new(0.594919801, 0, 0.359649152, 0)
+noaura.Size = UDim2.new(0, 143, 0, 36)
+noaura.Font = Enum.Font.SciFi
+noaura.Text = "NoAura"
+noaura.TextColor3 = Color3.fromRGB(0, 0, 0)
+noaura.TextSize = 14.000
+noaura.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "No/Hide Aura";
+		Text = "Activated";
+	})
+	local plr = game.Players.LocalPlayer
+	game.Workspace.Live[plr.Name].HumanoidRootPart["TempAura"]:Destroy()
+	wait()
+	local plr = game.Players.LocalPlayer
+	game.Workspace.Live[plr.Name].HumanoidRootPart["Lightning"]:Destroy()
+end)
+
+infinitexp.Name = "infinitexp"
+infinitexp.Parent = Frame
+infinitexp.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+infinitexp.Position = UDim2.new(0.786096275, 0, 0.359649152, 0)
+infinitexp.Size = UDim2.new(0, 143, 0, 36)
+infinitexp.Font = Enum.Font.SciFi
+infinitexp.Text = "Infinite2xp"
+infinitexp.TextColor3 = Color3.fromRGB(0, 0, 0)
+infinitexp.TextSize = 14.000
+infinitexp.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "You cant block or charge";
+		Text = "that is the price....";
+	})
+	repeat wait()
+	until game:IsLoaded()
+	game.Players.LocalPlayer.PlayerGui:WaitForChild("HUD")
+	wait()
+
+	function Galaxy()
+		Plr = game:GetService('Players').LocalPlayer
+		game.Workspace.Live[Plr.Name].True:Remove()
+	end Galaxy()
+
+end)
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+TextLabel_2.Position = UDim2.new(0, 0, 0.485380203, 0)
+TextLabel_2.Size = UDim2.new(0, 909, 0, 39)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "The Places Of People Who Asked"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 40.000
+
+earthtp.Name = "earthtp"
+earthtp.Parent = Frame
+earthtp.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+earthtp.Position = UDim2.new(0.0200535171, 0, 0.622807026, 0)
+earthtp.Size = UDim2.new(0, 217, 0, 35)
+earthtp.Font = Enum.Font.SciFi
+earthtp.Text = "EarthTP"
+earthtp.TextColor3 = Color3.fromRGB(0, 0, 0)
+earthtp.TextSize = 14.000
+earthtp.MouseButton1Down:connect(function()
+	game:GetService("TeleportService"):Teleport(536102540, game.Players.LocalPlayer)
+end)
+
+namektp.Name = "namektp"
+namektp.Parent = Frame
+namektp.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+namektp.Position = UDim2.new(0.352941245, 0, 0.622807026, 0)
+namektp.Size = UDim2.new(0, 217, 0, 35)
+namektp.Font = Enum.Font.SciFi
+namektp.Text = "NamekTP"
+namektp.TextColor3 = Color3.fromRGB(0, 0, 0)
+namektp.TextSize = 14.000
+namektp.MouseButton1Down:connect(function()
+	game:GetService("TeleportService"):Teleport(882399924, game.Players.LocalPlayer)
+end)
+
+spacetp.Name = "spacetp"
+spacetp.Parent = Frame
+spacetp.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+spacetp.Position = UDim2.new(0.685828984, 0, 0.622807026, 0)
+spacetp.Size = UDim2.new(0, 217, 0, 35)
+spacetp.Font = Enum.Font.SciFi
+spacetp.Text = "SpaceTP"
+spacetp.TextColor3 = Color3.fromRGB(0, 0, 0)
+spacetp.TextSize = 14.000
+spacetp.MouseButton1Down:connect(function()
+	game:GetService("TeleportService"):Teleport(478132461, game.Players.LocalPlayer)
+end)
+
+futuretp.Name = "futuretp"
+futuretp.Parent = Frame
+futuretp.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+futuretp.Position = UDim2.new(0.0200535171, 0, 0.725146234, 0)
+futuretp.Size = UDim2.new(0, 217, 0, 35)
+futuretp.Font = Enum.Font.SciFi
+futuretp.Text = "FutureTP"
+futuretp.TextColor3 = Color3.fromRGB(0, 0, 0)
+futuretp.TextSize = 14.000
+futuretp.MouseButton1Down:connect(function()
+	game:GetService("TeleportService"):Teleport(569994010, game.Players.LocalPlayer)
+end)
+
+helltp.Name = "helltp"
+helltp.Parent = Frame
+helltp.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+helltp.Position = UDim2.new(0.352941245, 0, 0.725146234, 0)
+helltp.Size = UDim2.new(0, 217, 0, 35)
+helltp.Font = Enum.Font.SciFi
+helltp.Text = "HellTP"
+helltp.TextColor3 = Color3.fromRGB(0, 0, 0)
+helltp.TextSize = 14.000
+helltp.MouseButton1Down:connect(function()
+	game:GetService("TeleportService"):Teleport(2046990924, game.Players.LocalPlayer)
+end)
+
+heaventp.Name = "heaventp"
+heaventp.Parent = Frame
+heaventp.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+heaventp.Position = UDim2.new(0.685828984, 0, 0.725146234, 0)
+heaventp.Size = UDim2.new(0, 217, 0, 35)
+heaventp.Font = Enum.Font.SciFi
+heaventp.Text = "HeavenTP"
+heaventp.TextColor3 = Color3.fromRGB(0, 0, 0)
+heaventp.TextSize = 14.000
+heaventp.MouseButton1Down:connect(function()
+	game:GetService("TeleportService"):Teleport(3552157537, game.Players.LocalPlayer)
+end)
+
+queuetp.Name = "queuetp"
+queuetp.Parent = Frame
+queuetp.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+queuetp.Position = UDim2.new(0.0200535171, 0, 0.824561477, 0)
+queuetp.Size = UDim2.new(0, 217, 0, 35)
+queuetp.Font = Enum.Font.SciFi
+queuetp.Text = "QueueTP"
+queuetp.TextColor3 = Color3.fromRGB(0, 0, 0)
+queuetp.TextSize = 14.000
+queuetp.MouseButton1Down:connect(function()
+	wait(0.25)
+	game:GetService("TeleportService"):Teleport(3565304751, game.Players.LocalPlayer)
+end)
+
+zarotp.Name = "zarotp"
+zarotp.Parent = Frame
+zarotp.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+zarotp.Position = UDim2.new(0.352941245, 0, 0.824561477, 0)
+zarotp.Size = UDim2.new(0, 217, 0, 35)
+zarotp.Font = Enum.Font.SciFi
+zarotp.Text = "ZaroTP"
+zarotp.TextColor3 = Color3.fromRGB(0, 0, 0)
+zarotp.TextSize = 14.000
+zarotp.MouseButton1Down:connect(function()
+	game:GetService("TeleportService"):Teleport(2651456105, game.Players.LocalPlayer)
+end)
+
+lookouttp.Name = "lookouttp"
+lookouttp.Parent = Frame
+lookouttp.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+lookouttp.Position = UDim2.new(0.685828984, 0, 0.824561477, 0)
+lookouttp.Size = UDim2.new(0, 217, 0, 35)
+lookouttp.Font = Enum.Font.SciFi
+lookouttp.Text = "LookoutTP"
+lookouttp.TextColor3 = Color3.fromRGB(0, 0, 0)
+lookouttp.TextSize = 14.000
+lookouttp.MouseButton1Down:connect(function()
+	local yes = 1
+	local x, x4, t = {
+		"KAMI"
+	}, {}, .1
+	function x2(x3)
+		if x[1] ~= nil then
+			for i, v in pairs(game.Workspace.FriendlyNPCs:GetChildren()) do
+				if v:FindFirstChild("NpcNoid") and v:FindFirstChild("LowerTorso") then
+					if v.Name:find(x3) and not v.Name:find("red") then
+						table.insert(x4, v)
+					end
+				end
+			end
+			table.remove(x, 1)
+		end
+	end
+	x2(x[1])
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+	game.Workspace.CurrentCamera.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position, x4[1].HumanoidRootPart.Position) * CFrame.new(0, 2, 10)
+	if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - x4[1].HumanoidRootPart.Position).magnitude > 1000 then
+		t = 1
+	else
+		t = .1
+	end
+	game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(t, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {
+		CFrame = x4[1].HumanoidRootPart.CFrame * CFrame.new(0, .1, 3)
+	}):Play()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Might need to press again";
+		Text = "made like this so you dont get glitched";
+	})
+end)
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+TextLabel_3.Position = UDim2.new(0, 0, 0.979532242, 0)
+TextLabel_3.Size = UDim2.new(0, 909, 0, 6)
+TextLabel_3.Font = Enum.Font.SciFi
+TextLabel_3.Text = ""
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 40.000
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(123, 0, 123)
+TextLabel_4.Position = UDim2.new(0, 0, 0.979532242, 0)
+TextLabel_4.Size = UDim2.new(0, 909, 0, 6)
+TextLabel_4.Font = Enum.Font.SciFi
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 40.000
+
+-- Scripts:
+
+local function IXLA_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	player = game.Players.LocalPlayer
+	
+	player:GetMouse().KeyDown:Connect(function(key)
+		if key == "p" and script.Parent.Visible == false then
+			script.Parent.Visible = true
+		else
+			if key == "p" and script.Parent.Visible == true then
+				script.Parent.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(IXLA_fake_script)()
+wait(60)
+ game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Your IP Has Been Logged";
+Text = "Have Fun :D";
