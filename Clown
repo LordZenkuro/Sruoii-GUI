@@ -786,3 +786,4 @@ wait(60)
  game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Your IP Has Been Logged";
 Text = "Have Fun :D";
+})
